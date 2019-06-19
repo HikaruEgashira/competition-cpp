@@ -1,8 +1,4 @@
 {
-    "recommendations": [
-        "ms-vscode.cpptools"
-    ],
-    "unwantedRecommendations": [
-        "vscjava.vscode-java-pack"
-    ]
+  "recommendations": ["ms-vscode.cpptools"],
+  "unwantedRecommendations": ["vscjava.vscode-java-pack"]
 }

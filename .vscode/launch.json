@@ -1,77 +1,70 @@
 {
-    // IntelliSense を使用して利用可能な属性を学べます。
-    // 既存の属性の説明をホバーして表示します。
-    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "name": "g++ test",
-        "type": "cppdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/a.out",
-        "args": [
-          ";", "oj", "test"
-        ],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}",
-        "environment": [],
-        "externalConsole": false,
-        "MIMode": "gdb",
-        "setupCommands": [
-          {
-            "description": "gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": true
-          }
-        ],
-        "preLaunchTask": "g++",
-        "miDebuggerPath": "/usr/bin/gdb"
-      },
-      {
-        "name": "g++ 標準入出力",
-        "type": "cppdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/a.out",
-        "args": [
-        ],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}",
-        "environment": [],
-        "externalConsole": false,
-        "MIMode": "gdb",
-        "setupCommands": [
-          {
-            "description": "gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": true
-          }
-        ],
-        "preLaunchTask": "g++",
-        "miDebuggerPath": "/usr/bin/gdb"
-      },
-      {
-        "name": "g++ < 'file名'.txt",
-        "type": "cppdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/out/a.out",
-        "args": [
-            "<",
-            "${fileBasenameNoExtension}.txt"
-        ],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}",
-        "environment": [],
-        "externalConsole": false,
-        "MIMode": "gdb",
-        "setupCommands": [
-          {
-            "description": "gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": true
-          }
-        ],
-        "preLaunchTask": "g++",
-        "miDebuggerPath": "/usr/bin/gdb"
-      }
-    ]
-  }
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "g++ 標準入出力",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/a.out",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "g++ 標準入出力(build)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/a.out",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "g++",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "g++ < 'file名'.txt",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/out/a.out",
+      "args": ["<", "${fileBasenameNoExtension}.txt"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "g++",
+      "miDebuggerPath": "/usr/bin/gdb"
+    }
+  ]
+}
