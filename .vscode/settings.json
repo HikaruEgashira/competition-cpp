@@ -7,8 +7,11 @@
   "C_Cpp.default.intelliSenseMode": "gcc-x64",
   "C_Cpp.loggingLevel": "Warning",
   "files.associations": {
+    "*.md": "mdx",
     "string": "cpp",
     "ostream": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "scc": "cpp",
+    "type_traits": "cpp"
   }
 }
