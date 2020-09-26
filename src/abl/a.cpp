@@ -4,7 +4,12 @@ using namespace atcoder;
 using namespace std;
 
 int main() {
-    int n, q;
-    cin >> n >> q;
-    cout << n << q << endl;
+    int k;
+    string s;
+    cin >> k;
+    for(int i = 0; i < k; i++) {
+        s += "ACL";
+    }
+
+    cout << s << endl;
 }

@@ -4,7 +4,11 @@ using namespace atcoder;
 using namespace std;
 
 int main() {
-    int n, q;
-    cin >> n >> q;
-    cout << n << q << endl;
+    long long int a, b, c, d;
+    cin >> a >> b >> c >> d;
+    if(a <= d && c <= b) {
+        cout << "Yes" << endl;
+    } else {
+        cout << "No" << endl;
+    }
 }
